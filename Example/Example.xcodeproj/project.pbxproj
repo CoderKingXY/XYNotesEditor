@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9400C1502D6A3C9B009C04D5 /* XYNotesEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 9400C14F2D6A3C9B009C04D5 /* XYNotesEditor */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9400C11A2D6A393B009C04D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9400C1502D6A3C9B009C04D5 /* XYNotesEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
+				9400C14F2D6A3C9B009C04D5 /* XYNotesEditor */,
 			);
 			productName = Example;
 			productReference = 9400C1032D6A393A009C04D5 /* Example.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = 9400C0FA2D6A393A009C04D5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9400C14E2D6A3C9B009C04D5 /* XCLocalSwiftPackageReference "../../XYNotesEditor" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9400C1042D6A393A009C04D5 /* Products */;
 			projectDirPath = "";
@@ -569,6 +578,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9400C14E2D6A3C9B009C04D5 /* XCLocalSwiftPackageReference "../../XYNotesEditor" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../XYNotesEditor;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9400C14F2D6A3C9B009C04D5 /* XYNotesEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = XYNotesEditor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9400C0FB2D6A393A009C04D5 /* Project object */;
 }

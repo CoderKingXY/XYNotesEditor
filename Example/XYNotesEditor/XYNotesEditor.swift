@@ -22,7 +22,13 @@ public class TextView: UITextView {
     
     public override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
-        
+
+
+        let layout = NSTextLayoutManager()
+
+//        let container =
+
+
     }
     
     

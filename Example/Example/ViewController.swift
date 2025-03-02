@@ -10,30 +10,24 @@ import XYNotesEditor
 
 class ViewController: UIViewController {
 
-    lazy var editorView: TextView = {
+    private lazy var editorVC: EditorViewController = EditorViewController()
 
-        let view = TextView()
-        view.backgroundColor = .systemGreen
-        view.automaticallyAdjustsScrollIndicatorInsets = true
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray4
-        
+
+        addChild(editorVC)
+        let editorView = editorVC.view!
         view.addSubview(editorView)
-        let layout = view.readableContentGuide
+
+        let safeAreaLayout = view.safeAreaLayoutGuide
         NSLayoutConstraint.activate([
-            editorView.leadingAnchor.constraint(equalTo: layout.leadingAnchor, constant: 0),
-            editorView.trailingAnchor.constraint(equalTo: layout.trailingAnchor, constant: 0),
-            editorView.topAnchor.constraint(equalTo: layout.topAnchor, constant: 0),
-            editorView.bottomAnchor.constraint(equalTo: layout.bottomAnchor,constant: 0)
+            editorView.leadingAnchor.constraint(equalTo: safeAreaLayout.leadingAnchor),
+            editorView.trailingAnchor.constraint(equalTo: safeAreaLayout.trailingAnchor),
+            editorView.topAnchor.constraint(equalTo: safeAreaLayout.topAnchor), 
+            editorView.bottomAnchor.constraint(equalTo: safeAreaLayout.bottomAnchor)
         ])
-        
+
     }
 
 
